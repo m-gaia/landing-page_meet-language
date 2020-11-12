@@ -1,53 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <title>DROMOMANÍA (MEET-LANGUAGE)</title>
+    <meta name="description" content="aprender idiomas">
+
+    <!-- Fabicon -->
+    <link  rel = "icon"  href = "favicon.ico"  type = "image / x-icon" >
+
 </head>
 <body>
-    
-    <!-- Botón - Menú de navegación -->
-    <div>
-        <span>=</span>
-    </div>
-    
-    <!-- NAV -->
+
+    <!-- NAV: Menú + Logo -->
     <nav>
-        <ul>
-            <li><a href="">¿Tienes DROMOMANÍA?</a></li>
-            <li><a href="">De qué se trata: ¿Más práctica? ¡Sí! </a></li>
-            <li><a href="">Beneficios</a></li>
-            <li><a href="">Tipos de MEET-LANGUAGE</a></li>
-            <li><a href="">Preguntas frecuentes</a></li>
-        </ul>
-    </nav>
-    <!-- HEADER -->
-    <header>
+        <!-- Menú de navegación -->
+        <div class="container">
+            <div class="row">
 
-        <!-- Logo - Nombre de app -->
-        <h1>
-            <a href="">
-            <img src="images/logo.PNG" width="150" alt="">
-            </a>
-        </h1>
-        <h2>¿Quieres practicar algún idioma con un hablante nativo? ¡Necesitas MEET-LANGUAGE!</h2>
-        <p>Te estás olvidando de una de las mejores maneras de aprender: la práctica.</p>
-        <p>Quizás digas: “¡Pero no tengo con quien practicar!</p>
-        <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte a practicar idiomas y están solo a unos cuantos clics de distancia. Puedes encontrarlas justo aquí, en Internet, sin importar el lugar donde vivas.</p>
-
-    </header>
-
-    <!-- MAIN: DIV - FORMULARIO -->
-
-    <div>
-        <h3>¡Registrate gratis!</h3>
-        <form action="" post="post">
-            <input type="text" placeholder="Nombre y apeliido" required>
-            <input type="email" placeholder="Email" required>
-            <button type="submit">Inscribirse</button>
-        </form>
-
-    </div>
+                <!-- Botón -->
+                <div class="col-1">
+                    <div>
+                        <span>=</span>
+                    </div>
+                </div>
     
+                <!-- Menú de navegación oculto -->
+                <ul>
+                    <li><a href="">¿Tienes DROMOMANÍA?</a></li>
+                    <li><a href="">De qué se trata: ¿Más práctica? ¡Sí! </a></li>
+                    <li><a href="">Beneficios</a></li>
+                    <li><a href="">Tipos de MEET-LANGUAGE</a></li>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                </ul>
+
+                <!-- Logo - Nombre de app -->
+                <div class="col-2">
+                    <h1>
+                        <a href="">
+                        <img src="images/logo.PNG" width="150" alt="">
+                        </a>
+                    </h1>
+                </div>
+
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </nav>
+
+    <!-- MAIN: Encabezado + Refuerzo + Formulario + Beneficios -->
+
+        <!-- HEADER EN MAIN -->
+    <main>
+        <header>
+            <div class="container">
+                <div class="row">       
+                    <section>
+                        <article>
+
+                            <!-- Encabezado principal -->
+                            <div class="col-4">
+                                <h2>¿Quieres practicar algún idioma con un hablante nativo? ¡Necesitas MEET-LANGUAGE!</h2>
+                            </div>
+
+                            <!-- Refuerzo -->
+                            <div class="col-4">
+                                <p>Te estás olvidando de una de las mejores maneras de aprender: la práctica.</p>
+                                <p>Quizás digas: “¡Pero no tengo con quien practicar!</p>
+                                <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte a practicar idiomas y están solo a unos cuantos clics de distancia. Puedes encontrarlas justo aquí, en Internet, sin importar el lugar donde vivas.</p>
+                            </div>
+                        </article>
+
+                        <!-- Formulario -->
+                        <div class="col-4">
+                            <h3>¡Registrate gratis!</h3>
+                            <form action="procesar-formulario.php" post="post">
+                                <input type="text" placeholder="Nombre y apeliido" required>
+                                <input type="email" placeholder="Email" required>
+                                <button type="submit">Inscribirse</button>
+                            </form>
+                        </div>
+                    </section>
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </header>
+        <hr>
+        <!-- DIV EN MAIN -->
+        <div class="container">
+            <div class="row">
+                <!-- Beneficios -->
+                <div class="section" id="beneficios">
+
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </main>
+
+    <!-- ASIDE: Redes sociales -->
+    <aside>
+        <div class="container">
+            <div class="row">
+                <!-- <h3>Redes Sociales</h3> -->
+                <div class="col-1">
+                    <a href="https://www.facebook.com/" target="_blank">FB</a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.instagram.com/" target="_blank">IN</a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.twitter.com/" target="_blank">TW</a>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <!-- Preguntas frecuentes VER MODAL -->
+                </div>
+                <div class="col-1">
+                    <!-- Politicas de privacidad VER MODAL -->
+                </div>
+                <div class="col-1">
+                    <!-- Newsletter VER MODAL -->
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </footer>
+
 </body>
 </html>
