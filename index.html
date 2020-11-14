@@ -3,15 +3,16 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Hora de practicar! Meet-Languages</title>
-    <meta name="description" content="aprender idiomas">
+    <title>Hablar nos conecta! Meet-Languages</title>
+    <meta name="description" content="conocer idiomas">
 
     <!-- Fabicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link  rel = "icon"  href = "favicon.ico"  type = "image / x-icon" >
 
 </head>
 <body>
 
+    <!-- BACKGROUND -->
     <!-- NAV: Menú + Logo -->
     <nav>
         <!-- Menú de navegación -->
@@ -30,14 +31,13 @@
                     <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
                     <li><a href="#beneficios">Beneficios</a></li>
                     <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
-
                 </ul>
 
                 <!-- Logo - Nombre de app -->
                 <div class="col-2">
                     <h1>
                         <a href="">
-                        <img src="images/logo_nombre.PNG" width="200" alt="">
+                        <img src="images/logo-nombre.PNG" width="300" alt="Meet-Languages">
                         </a>
                     </h1>
                 </div>
@@ -52,6 +52,7 @@
         <!-- HEADER EN MAIN -->
     <main>
         <header>
+            <!-- ENCABEZADO + FORMULARIO -->
             <div class="container">
                 <div class="row">       
                     <section>
@@ -67,35 +68,50 @@
                                 <p>Te estás olvidando de una de las mejores maneras de aprender: la práctica.</p>
                                 <p>Quizás pienses: "¡Pero no tengo con quien conversar!"</p>
                                 <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte con el mismo objetivo y están solo a unos cuantos clics de distancia. Puedes encontrarlas justo aquí, en Internet, sin importar el lugar donde vivas.</p>
+                                <p>Inicia ahora con una experiencia global.</p>
                             </div>
                         </article>
 
                         <!-- Formulario -->
                         <div class="col-4">
-                            <h3>¡Registrate gratis!</h3>
+                            <h3>¡Únete ahora mismo gratis!</h3>
                             <form action="procesar-formulario.php" post="post">
                                 <input type="text" placeholder="Nombre y apeliido" required>
                                 <input type="email" placeholder="Email" required>
-                                <button type="submit">Inscribirse</button>
+                                <button type="submit">Registrarse</button>
                             </form>
                         </div>
                     </section>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
 
+        <!-- BENEFICIOS -->
+            <div class="container">
+                <div class="row">
+                    <!-- Beneficios NO LLEVA TITULO h3!!! -->
+                    <section>
+                        <article>
+                            <div class="col-1">
+                                <h4>Amigos</h4>
+                                <img src="images/amigos.PNG" alt="hablantes nativos">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="col-1">
+                                <h4>Confianza y fluidez</h4>
+                                <img src="images/confianza.PNG" alt="conversacional">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="col-1">
+                                <h4>Experiencia y cultura</h4>
+                                <img src="images/experiencia.PNG" alt="trabajo y viajes">
+                            </div>
+                        </article>
+                    </section>
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </header>
-        <hr>
-        <!-- DIV EN MAIN -->
-        <div class="container">
-            <div class="row">
-                <!-- Beneficios -->
-                <div class="section" id="beneficios">
-                    <div class="col-2">
-                        <h3>Beneficios</h3>
-                    </div>
-                </div>
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
     </main>
     <hr>
 
@@ -105,7 +121,7 @@
             <div class="row">
                 <!-- <h3>Redes Sociales</h3> -->
                 <div class="col-2">
-                    <h3>Redes sociales</h3>
+                    <h3>Podes seguirnos en:</h3>
                 </div>
                 <!-- Iconos -->
                 <div class="col-1">
@@ -126,11 +142,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-1">
-                    <!-- Politicas de privacidad VER MODAL -->
+                <div class="col-2">
+                    <h6>Copyright 2020 Meet-Language</h6>
                 </div>
                 <div class="col-1">
-                    <!-- Newsletter VER MODAL -->
+                    <a href="mailto:info@meet-languages.com">Contacto</a>
                 </div>
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -141,20 +157,41 @@
     <!-- Sobre nosotros -->
     <div id="sobre-nosotros" class="modal-mask">
         <div class="content">
-        <a href="#/">Sobre nosotros</a>
-        <h3>Sobre nosotros</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam voluptates ipsam necessitatibus amet veritatis magni. Sunt perspiciatis labore et doloremque deleniti laborum, hic consequuntur quidem nobis explicabo fugit quos!</p>
-        <img src="" alt="">
+            <a href="#/">Conoce más</a>
+            <h3>Sobre nosotros</h3>
+            <p>Meet-Languages es lo que las personas necesitan para aprender nuevos idiomas. Hablar nos conecta con otros y si es en otro idioma mejor, ya que tu apertura mental hacia otros temas y nuevos conocimientos es inimaginable...</p>
+            
+            <img src="" alt=""> 
+        </div>
+    </div>
+
+    <!-- Beneficios -->
+    <div id="beneficios" class="modal-mask">
+        <div class="content">
+            <a href="#/">Beneficios</a>
+            <h3>Beneficios</h3>
+
+            <h4>Amigos</h4>
+            <img src="images/amigos.PNG" alt="hablantes nativos">
+            <p>Conecta con hablantes nativos del idioma o que se encuentren en el país de tu interés e incluso a los que vivan cerca de ti y necesiten un recorrido por tu Ciudad.</p>
+
+            <h4>Confianza y fluidez</h4>
+            <img src="images/confianza.PNG" alt="conversacional">
+            <p>Conversa en el mundo real, no pases el tiempo memorizando vocabulario y haciendo actividades de manual.</p>
+       
+            <h4>Experiencia y cultura</h4>
+            <img src="images/experiencia.PNG" alt="trabajo y viajes">
+            <p>Comparte tus hobbies, actividades profesionales o busca viajes y nuevas aventuras mientras mejoras tus habilidades conversacionales.</p>
         </div>
     </div>
 
     <!-- Preguntas frecuentes -->
     <div id="preguntas-frecuentes" class="modal-mask">
         <div class="content">
-        <a href="#/">Preguntas frecuentes</a>
-        <h3>Preguntas frecuentes</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam voluptates ipsam necessitatibus amet veritatis magni. Sunt perspiciatis labore et doloremque deleniti laborum, hic consequuntur quidem nobis explicabo fugit quos!</p>
-        <img src="" alt="">
+            <a href="#/">FAQ</a>
+            <h3>Preguntas frecuentes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam voluptates ipsam necessitatibus amet veritatis magni. Sunt perspiciatis labore et doloremque deleniti laborum, hic consequuntur quidem nobis explicabo fugit quos!</p>
+            <img src="" alt="">
         </div>
     </div>
 
