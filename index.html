@@ -6,9 +6,13 @@
     <title>Hablar nos conecta! Meet-Languages</title>
     <meta name="description" content="conocer idiomas">
 
-      <!-- Estilos -->
+    <!-- style.css - ruta -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Fuentes - externas (fonts.google.com) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
     <!-- Fabicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -17,7 +21,7 @@
 
     <!-- BACKGROUND -->
     <!-- NAV: Menú + Logo -->
-    <nav>
+    <nav id="navbar">
         <!-- Menú de navegación -->
         <div class="container">
             <div class="row">
@@ -28,10 +32,10 @@
                     </div>
                 </div>
                 <!-- Menú desplegado oculto -->
-                <ul>
-                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                <ul id="navbar-menu">
+                    <li class= "navbar-item"><a href="#sobre-nosotros" class= "navbar-link">Sobre nosotros</a></li>
+                    <li class= "navbar-item"><a href="#beneficios" class= "navbar-link">Beneficios</a></li>
+                    <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Preguntas frecuentes</a></li>
                 </ul>
                 <!-- Logo - Nombre de app -->
                 <div class="col-2">
@@ -54,26 +58,26 @@
             <!-- ENCABEZADO y REFUERZO + FORMULARIO -->
             <div class="container">
                 <div class="row">       
-                    <section>
+                    <section id="principal">
                         <article>
                             <!-- Encabezado principal -->
                             <div class="col-4">
-                                <h2>¿Quieres aprender algún idioma con un hablante nativo? ¡Necesitas MEET-LANGUAGE!</h2>
+                                <h2 class="text-violet">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO? ¡NECESITAS MEET-LANGUAGES!</h2>
                             </div>
                             <!-- Refuerzo -->
                             <div class="col-4">
                                 <p>Quizás pienses: "¡Pero no tengo con quien conversar!"</p>
-                                <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte con el mismo objetivo y están solo a unos cuantos clics de distancia. Puedes encontrarlas justo aquí, sin importar el lugar donde vivas.</p>
+                                <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte con el mismo objetivo y están a unos cuantos clicks. Puedes encontrarlas justo aquí, sin importar el lugar donde vivas.</p>
                                 <p>Inicia ahora con una experiencia global.</p>
                             </div>
                         </article>
                         <!-- Formulario -->
                         <div class="col-4">
-                            <h3>¡Únete ahora mismo gratis!</h3>
+                            <h3>¡ÚNETE AHORA MISMO GRATIS!</h3>
                             <form action="procesar-formulario.php" post="post">
-                                <input type="text" placeholder="Nombre y apeliido" required>
-                                <input type="email" placeholder="Email" autofocus required>
-                                <button type="submit">Registrarse</button>
+                                <input class="btn" type="text" placeholder="Nombre y apeliido" required>
+                                <input class="btn" type="email" placeholder="Email" autofocus required>
+                                <button class="btn btn-sign-in" type="submit">Registrarse</button>
                             </form>
                         </div>
                     </section>
@@ -83,27 +87,29 @@
         <!-- BENEFICIOS -->
             <div class="container">
                 <div class="row">
-                    <!-- Beneficios NO LLEVARA TITULO!!! -->
-                    <section>
-                        <article>
-                            <div class="col-1">
-                                <h4>Amigos</h4>
-                                <img src="images/amigos-icon.PNG" alt="hablantes nativos">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="col-1">
-                                <h4>Confianza y fluidez</h4>
-                                <img src="images/confianza-icon.PNG" alt="conversacional">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="col-1">
-                                <h4>Experiencia y cultura</h4>
-                                <img src="images/experiencia-icon.PNG" alt="trabajo y viajes">
-                            </div>
-                        </article>
-                    </section>
+                    <div class="col-3">
+                        <!-- Beneficios NO LLEVARA TITULO!!! -->
+                        <section id="beneficios">
+                            <article>
+                                <div class="col-1">
+                                    <h4>AMIGOS</h4>
+                                    <img src="images/amigos-icon.PNG" alt="hablantes nativos">
+                                </div>
+                            </article>
+                            <article>
+                                <div class="col-1">
+                                    <h4>CONFIANZA Y FLUIDEZ</h4>
+                                    <img src="images/confianza-icon.PNG" alt="conversacional">
+                                </div>
+                            </article>
+                            <article>
+                                <div class="col-1">
+                                    <h4>EXPERIENCIA Y CULTURA</h4>
+                                    <img src="images/experiencia-icon.PNG" alt="trabajo y viajes">
+                                </div>
+                            </article>
+                        </section>
+                    </div> <!-- /.col-article -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </header>
@@ -153,7 +159,7 @@
     <div id="sobre-nosotros" class="modal-mask">
         <div class="content">
             <a href="#/">Conoce más</a>
-            <h3>Sobre nosotros</h3>
+            <h3>SOBRE NOSOTROS</h3>
             <p>Meet-Languages es lo que las personas necesitan para aprender nuevos idiomas. Tú apertura mental hacia otros temas y nuevos conocimientos es inimaginable...</p>
             <h4>Hablar nos conecta!</h4>
             <img src="images/compu.PNG" alt="conectados"> 
@@ -164,7 +170,7 @@
     <div id="beneficios" class="modal-mask">
         <div class="content">
             <a href="#/">Beneficios</a>
-            <h3>Beneficios</h3>
+            <h3>BENEFICIOS</h3>
 
             <h4>Amigos</h4>
             <img src="images/amigos.PNG" alt="hablantes nativos">
@@ -184,7 +190,7 @@
     <div id="preguntas-frecuentes" class="modal-mask">
         <div class="content">
             <a href="#/">FAQ</a>
-            <h3>Preguntas frecuentes</h3>
+            <h3>PREGUNTAS FRECUENTES</h3>
             <details>
                 <summary>¿Cómo usar Meet-Language?</summary>
                 <p>¡Bienvenido a Meet-Language! Puedes utilizarlo a través de nuestras aplicaciones para iOS, Android y nuestra página web (para dispositivos móviles y computadoras).</p>
