@@ -4,6 +4,7 @@
 
     <meta charset="UTF-8">
     <title>Hablar nos conecta! Meet-Languages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="conocer idiomas">
 
     <!-- style.css - ruta -->
@@ -27,7 +28,7 @@
     <nav id="navbar">
         <!-- Menú de navegación -->
         <div class="container">
-            <div class="row">
+            <div class="row clearfix">
                 <!-- Botón -->
                 <div class="col-1">
                     <div>
@@ -35,7 +36,7 @@
                     </div>
                 </div>
                 <!-- Menú desplegado oculto -->
-                <ul id="navbar-menu">
+                <ul class="navbar-menu">
                     <li class= "navbar-item"><a href="#sobre-nosotros" class= "navbar-link">Sobre nosotros</a></li>
                     <li class= "navbar-item"><a href="#beneficios" class= "navbar-link">Beneficios</a></li>
                     <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Preguntas frecuentes</a></li>
@@ -44,14 +45,13 @@
                 <div class="col-2">
                     <h1>
                         <a href="">
-                        <img src="images/logo-nombre1.PNG" class="center-block" width="300" alt="Meet-Languages">
+                        <img src="images/logo-nombre1.PNG" width="200" alt="Meet-Languages">
                         </a>
                     </h1>
                 </div>
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </nav>
-    <hr>
 
     <!-- MAIN: Encabezado + Refuerzo + Formulario + Beneficios -->
 
@@ -60,17 +60,14 @@
         <header>
             <!-- ENCABEZADO y REFUERZO + FORMULARIO -->
             <div class="container">
-                <div class="row">       
-                    <section id="principal">
+                <section id="principal">
+                    <div class="row clearfix"> 
                         <article>
+                            <div class="col-4">
                             <!-- Encabezado principal -->
-                            <div class="col-4">
-                                <h2 class="text-violet">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO? ¡NECESITAS MEET-LANGUAGES!</h2>
-                            </div>
+                                <h2 class="text-violet">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO?</h2>
                             <!-- Refuerzo -->
-                            <div class="col-4">
                                 <p>Quizás pienses: "¡Pero no tengo con quien conversar!"</p>
-                                <p>De hecho, ¡si lo tienes! Hay miles de personas que pueden ayudarte con el mismo objetivo y están a unos cuantos clicks. Puedes encontrarlas justo aquí, sin importar el lugar donde vivas.</p>
                                 <p>Inicia ahora con una experiencia global.</p>
                             </div>
                         </article>
@@ -83,36 +80,31 @@
                                 <button class="btn btn-sign-in" type="submit">Registrarse</button>
                             </form>
                         </div>
-                    </section>
-                </div> <!-- /.row -->
+                    </div> <!-- /.row -->
+                </section>
             </div> <!-- /.container -->
 
         <!-- BENEFICIOS -->
             <div class="container">
-                <div class="row">
-                    <div class="col-3">
+                <div class="row clearfix">
+                    <div class="col-4">
                         <!-- Beneficios NO LLEVARA TITULO!!! -->
                         <section id="beneficios">
-                            <article>
-                                <div class="col-1">
+                            <div class="bxslider">
+                                <div>
                                     <h4>AMIGOS</h4>
                                     <img src="images/amigos-icon.PNG" class= "img-fluid" alt="hablantes nativos">
                                 </div>
-                            </article>
-                            <article>
-                                <div class="col-1">
+                                <div>
                                     <h4>CONFIANZA Y FLUIDEZ</h4>
                                     <img src="images/confianza-icon.PNG" class= "img-fluid" alt="conversacional">
                                 </div>
-                            </article>
-                            <article>
-                                <div class="col-1">
+                                <div>
                                     <h4>EXPERIENCIA Y CULTURA</h4>
                                     <img src="images/experiencia-icon.PNG" class= "img-fluid" alt="trabajo y viajes">
                                 </div>
-                            </article>
                         </section>
-                    </div> <!-- /.col-article -->
+                    </div> <!-- /.col-section -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </header>
@@ -122,21 +114,17 @@
     <!-- ASIDE: Redes sociales -->
     <aside>
         <div class="container">
-            <div class="row">
+            <div class="row clearfix">
                 <!-- <h3>Redes Sociales</h3> -->
-                <div class="col-2">
+                <div class="col-3">
                     <h3>Podes seguirnos en:</h3>
                 </div>
                 <!-- Iconos -->
                 <div class="col-1">
                     <a href="https://www.facebook.com/" target="_blank"><img src="icons/icon-facebook_preview_rev_1.png" width="50" alt="logo Facebook"></a>
-                </div>
-                <div class="col-1">
                     <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram-icon_preview_rev_1.png" width="50" alt="logo Instagram"></a>
-                </div>
-                <div class="col-1">
                     <a href="https://www.twitter.com/" target="_blank"><img src="icons/icon-twitter_preview_rev_1.png" width="50" alt="logo Twitter"></a>
-                </div>
+                </div> <!-- /.col-iconos -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </aside>
@@ -164,6 +152,7 @@
             <a href="#/">Conoce más</a>
             <h3>SOBRE NOSOTROS</h3>
             <p>Meet-Languages es lo que las personas necesitan para aprender nuevos idiomas. Tú apertura mental hacia otros temas y nuevos conocimientos es inimaginable...</p>
+            <p>Hay miles de personas que pueden ayudarte con el mismo objetivo y están a unos cuantos clicks. Puedes encontrarlas justo aquí, sin importar el lugar donde vivas.</p>
             <h4>Hablar nos conecta!</h4>
             <img src="images/compu.PNG" alt="conectados"> 
         </div>

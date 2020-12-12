@@ -1,32 +1,38 @@
 /* BASE */
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.5;
+    font-family:'Quicksand', sans-serif;
+    line-height:1.5;
     /*background: #fff url("../images/bg-1080ny.png") no-repeat center center fixed;
     background-size: cover;*/
 } 
 
 a {
-  color: #000;
-  text-decoration: none;
+  color:#000;
+  text-decoration:none;
 }
 
 ul {
-  list-style: none;
+  list-style:none;
 }
 
 /* nav {
   border:solid 1px #000;
 } */
 
-  /* HELPERS - CLASSES */
+/* HELPERS - CLASSES */
 
+.clearfix {
+  overflow:hidden;
+}
 .mt-15 {
   margin-top:15px;
 }
 .pt-15 {
   padding-top:15px;
+}
+.bg-orange {
+  color:#D76754
 }
 .text-violet {
   color:#2E1042;
@@ -35,23 +41,60 @@ ul {
   color:#A6A6A6;
 }
 .bg-yellow {
-  color: #FFF952;
+  color:#FFF952;
 }
-.center-block{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.center-block {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
-.img-fluid{
-  max-width: 100%;
-  height: auto;
+.img-fluid {
+  max-width:100%;
+  height:auto;
 }
 
-  /* LAYOUT - GRID SYSTEM */
+/* LAYOUT - GRID SYSTEM */
+
+.container {
+  width:350px;
+  height:auto;
+  margin:0px auto;
+  padding-left:15px;
+  padding-right:15px;
+  max-width:100%;
+}
+
+.row {
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  position:relative;
+  float:left;
+  min-height:1px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.col-1 {
+width:25%;
+}
+.col-2 {
+width:50%;
+}
+.col-3 {
+width:75%;
+}
+.col-4 {
+width:100%;  
+}
 
 
-
-  /* COMPONENTS (elementos estructurales, btn */
+/* COMPONENTS (elementos estructurales, btn */
 
 nav {
   
@@ -60,75 +103,79 @@ nav {
 ul.navbar-menu {
   margin:0;
   padding:0;
-/*  border:solid 1px red; */
+  position:absolute;
+  left:-514px;
 }
   .navbar-item {
     margin-bottom:10px;
   }
     .navbar-link {
       padding:5px;
-      display: inline-block;
+      display:inline-block;
       font-size:18px;
       text-transform:uppercase;
-      color: #2E1042;
+      color:#2E1042;
     }
     .navbar-link:hover {
-      color: #fff;
-      background: #2E1042;
+      color:#fff;
+      background:#2E1042;
     }
 
 
 header {
-  padding: 18px;
-  text-align: center;
+  /*padding: 18px;*/
+  /*text-align: center;*/
 }
 
 .btn {
+  display:inline-block;
   padding:8px 18px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-family:'Quicksand', sans-serif;
+  font-weight:bold;
+  font-size:20px;
   color:#000;
   text-decoration:none;
   border:solid 2px #2E1042;
 }
   .btn-sign-in {
-    background-color: #FFF952;
-    cursor: pointer;
+    background-color:#FFF952;
+    cursor:pointer;
   }
 
 /*.box-article{
   display:inline-block;
-  /*width: 30%;
+  width: 30%;
   padding: 15px;
   text-align: center;
   border: none
 }*/
 
 aside {
-  padding: 18px;
-  text-align: left;
+  /*padding: 18px;*/
+  text-align:left;
 }
 
 footer {
-  padding:18px;
+  /*padding:18px;*/
   /*background: #000 url("../images/18422-rayas-de-colores.jpg") no-repeat center;
   background-size: cover*/
 }
 
 /* PAGES - SECTIONS */
 
-
 #principal,
 #beneficios {
-  padding: 18px;
-  text-align: center;
+  /*padding: 18px;*/
+  text-align:center;
 }
 
-#beneficios h4 {
+#beneficios {
+  margin: 15px;
   background: #D76754;
   color: #fff;
-  font-weight: bold;
   font-size: 20px;
 }
 
+#beneficios img {
+  border-radius:50%;
+}
