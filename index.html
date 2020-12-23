@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="conocer idiomas">
 
-    <!-- style.css - ruta -->
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Fuentes - externas (fonts.google.com) -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     
     <!-- Iconos - Fontawesome (fonts.google.com) -->
     <link rel="stylesheet" href="css/all.css">
+
+    <!-- style.css - ruta -->
+    <link rel="stylesheet" href="css/style.css">
     
     <!-- Fabicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -25,33 +25,33 @@
 
     <!-- BACKGROUND -->
     <!-- NAV: Menú + Logo -->
-    <nav id="navbar">
+
+    <div class="container">
         <!-- Menú de navegación -->
-        <div class="container">
+        <nav id="navbar">
             <div class="row clearfix">
                 <!-- Botón -->
                 <div class="col-1">
-                    <div>
+                    <div class="menu-button">
                         <span>=</span>
+                <!-- Menú desplegado oculto -->
+                        <ul class="navbar-menu">
+                            <li class= "navbar-item"><a href="#sobre-nosotros" class= "navbar-link">Sobre nosotros</a></li>
+                            <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Preguntas frecuentes</a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Menú desplegado oculto -->
-                <ul class="navbar-menu">
-                    <li class= "navbar-item"><a href="#sobre-nosotros" class= "navbar-link">Sobre nosotros</a></li>
-                    <li class= "navbar-item"><a href="#beneficios" class= "navbar-link">Beneficios</a></li>
-                    <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Preguntas frecuentes</a></li>
-                </ul>
                 <!-- Logo - Nombre de app -->
                 <div class="col-2">
                     <h1>
                         <a href="">
-                        <img src="images/logo-nombre1.PNG" width="200" alt="Meet-Languages">
+                        <img src="images/logo-nombre1.PNG" class="img-fluid" alt="Meet-Languages">
                         </a>
                     </h1>
                 </div>
             </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </nav>
+        </nav>
+    </div> <!-- /.container -->
 
     <!-- MAIN: Encabezado + Refuerzo + Formulario + Beneficios -->
 
@@ -62,7 +62,7 @@
             <div class="container">
                 <section id="principal">
                     <div class="row clearfix"> 
-                        <article>
+                        <article class="mb-15 pb-15">
                             <div class="col-4">
                             <!-- Encabezado principal -->
                                 <h2 class="text-violet">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO?</h2>
@@ -72,12 +72,12 @@
                             </div>
                         </article>
                         <!-- Formulario -->
-                        <div class="col-4">
-                            <h3>¡ÚNETE AHORA MISMO GRATIS!</h3>
+                        <div class="col-4 bg-violet">
+                            <h3 class="text-center text-white">¡ÚNETE AHORA MISMO GRATIS!</h3>
                             <form action="procesar-formulario.php" post="post">
-                                <input class="btn" type="text" placeholder="Nombre y apellido" required>
-                                <input class="btn" type="email" placeholder="Email" autofocus required>
-                                <button class="btn btn-sign-in" type="submit">Registrarse</button>
+                                <input type="text" placeholder="Nombre y apellido" required class="block mb-15 pt-15">
+                                <input type="email" placeholder="Email" autofocus required class="block mb-15 pt-15">
+                                <button class="btn btn-sign-in mb-15" type="submit">Registrarse</button>
                             </form>
                         </div>
                     </div> <!-- /.row -->
@@ -92,16 +92,16 @@
                         <section id="beneficios">
                             <div class="bxslider">
                                 <div>
+                                    <h4>EXPERIENCIA Y CULTURA</h4>
+                                    <img src="images/experiencia-icon.PNG" class= "img-fluid" alt="trabajo y viajes">
+                                </div>
+                                <div>
                                     <h4>AMIGOS</h4>
                                     <img src="images/amigos-icon.PNG" class= "img-fluid" alt="hablantes nativos">
                                 </div>
                                 <div>
                                     <h4>CONFIANZA Y FLUIDEZ</h4>
                                     <img src="images/confianza-icon.PNG" class= "img-fluid" alt="conversacional">
-                                </div>
-                                <div>
-                                    <h4>EXPERIENCIA Y CULTURA</h4>
-                                    <img src="images/experiencia-icon.PNG" class= "img-fluid" alt="trabajo y viajes">
                                 </div>
                         </section>
                     </div> <!-- /.col-section -->
@@ -113,14 +113,14 @@
 
     <!-- ASIDE: Redes sociales -->
     <aside>
-        <div class="container">
+        <div class="container bg-grey">
             <div class="row clearfix">
                 <!-- <h3>Redes Sociales</h3> -->
-                <div class="col-3">
+                <div class="col-4">
                     <h3>Podes seguirnos en:</h3>
                 </div>
                 <!-- Iconos -->
-                <div class="col-1">
+                <div class="col-3">
                     <a href="https://www.facebook.com/" target="_blank"><img src="icons/icon-facebook_preview_rev_1.png" width="50" alt="logo Facebook"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram-icon_preview_rev_1.png" width="50" alt="logo Instagram"></a>
                     <a href="https://www.twitter.com/" target="_blank"><img src="icons/icon-twitter_preview_rev_1.png" width="50" alt="logo Twitter"></a>
@@ -135,7 +135,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <h4 class="text-grey">Copyright 2020 Meet-Language</h4>
+                    <h5 class="text-grey">Copyright 2020 Meet-Language</h5>
                 </div>
                 <div class="col-1">
                     <a href="mailto:info@meet-languages.com">Contacto</a>
@@ -149,7 +149,7 @@
     <!-- Sobre nosotros -->
     <div id="sobre-nosotros" class="modal-mask">
         <div class="content">
-            <a href="#/">Conoce más</a>
+            <a href="#/">Cerrar</a>
             <h3>SOBRE NOSOTROS</h3>
             <p>Meet-Languages es lo que las personas necesitan para aprender nuevos idiomas. Tú apertura mental hacia otros temas y nuevos conocimientos es inimaginable...</p>
             <p>Hay miles de personas que pueden ayudarte con el mismo objetivo y están a unos cuantos clicks. Puedes encontrarlas justo aquí, sin importar el lugar donde vivas.</p>
@@ -158,30 +158,10 @@
         </div>
     </div>
 
-    <!-- Beneficios -->
-    <div id="detalle-beneficios" class="modal-mask">
-        <div class="content">
-            <a href="#/">Beneficios</a>
-            <h3>BENEFICIOS</h3>
-
-            <h4>Amigos</h4>
-            <img src="images/amigos.PNG" alt="hablantes nativos">
-            <p>Conecta con hablantes nativos del idioma o que se encuentren en el país de tu interés e incluso a los que vivan cerca de ti y necesiten un recorrido por tu Ciudad.</p>
-
-            <h4>Confianza y fluidez</h4>
-            <img src="images/confianza.PNG" alt="conversacional">
-            <p>Conversa en el mundo real, no pases el tiempo memorizando vocabulario y haciendo actividades de manual.</p>
-       
-            <h4>Experiencia y cultura</h4>
-            <img src="images/experiencia.PNG" alt="trabajo y viajes">
-            <p>Comparte tus hobbies, actividades profesionales o busca viajes y nuevas aventuras mientras mejoras tus habilidades conversacionales.</p>
-        </div>
-    </div>
-
     <!-- Preguntas frecuentes -->
     <div id="preguntas-frecuentes" class="modal-mask">
         <div class="content">
-            <a href="#/">FAQ</a>
+            <a href="#/">Cerrar</a>
             <h3>PREGUNTAS FRECUENTES</h3>
             <details>
                 <summary>¿Cómo usar Meet-Language?</summary>

@@ -1,3 +1,20 @@
+/* Variables CSS */
+:root {
+  --bg-principal: #2E1042;
+  --bg-beneficios: #ffffff;
+
+  /* Paleta de colores en base al logo
+  ------------------------------------ */
+  /*--primary-color: #F28322;
+  --second-color: #F2E205;
+  --third-color: #F20505;
+  --bg-gradient-01:0deg, #3ea7ff 0%, #42d1ff 100%;*/
+}
+
+* {
+  box-sizing:border-box;
+}
+
 /* BASE */
 
 body {
@@ -25,6 +42,12 @@ ul {
 .clearfix {
   overflow:hidden;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
+.pb-15 {
+  padding-bottom:15px;
+}
 .mt-15 {
   margin-top:15px;
 }
@@ -32,16 +55,31 @@ ul {
   padding-top:15px;
 }
 .bg-orange {
-  color:#D76754
+  color:#D96459;
 }
 .text-violet {
-  color:#2E1042;
+  color:#2E1042 5px
 }
 .text-grey {
   color:#A6A6A6;
 }
+.text-white {
+  color:#fff;
+}
+.text-center {
+  text-align:center;
+}
 .bg-yellow {
   color:#FFF952;
+}
+.bg-grey {
+  color:#A6A6A6;
+}
+.bg-violet {
+  background-color:var(--bg-principal);
+}
+.border-principal {
+  color:#2E1042 5px;
 }
 .center-block {
   display:block;
@@ -62,6 +100,7 @@ ul {
   padding-left:15px;
   padding-right:15px;
   max-width:100%;
+  overflow:hidden;
 }
 
 .row {
@@ -100,26 +139,65 @@ nav {
   
 }
 
-ul.navbar-menu {
-  margin:0;
-  padding:0;
-  position:absolute;
-  left:-514px;
+.menu-button span {
+  cursor:pointer;
+  font-size:24px;
 }
-  .navbar-item {
-    margin-bottom:10px;
+
+  ul.navbar-menu {
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:-514px;
+    z-index:99;  
+    transition:all 400ms ease-in-out;
   }
-    .navbar-link {
-      padding:5px;
-      display:inline-block;
-      font-size:18px;
-      text-transform:uppercase;
-      color:#2E1042;
+    .navbar-item {
+      margin-bottom:10px;
     }
-    .navbar-link:hover {
-      color:#fff;
-      background:#2E1042;
-    }
+      .navbar-link {
+        padding:5px;
+        display:inline-block;
+        font-size:18px;
+        text-transform:uppercase;
+        color:#2E1042;
+      }
+      .navbar-link:hover {
+        color:#fff;
+        background:#2E1042;
+      }
+
+.menu-button span:hover ~ ul.navbar-menu,
+ul.navbar-menu:hover {
+left:0;
+}
+
+.modal-mask {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgba(0,0,0,.3);
+  opacity:0;
+  pointer-events:none;
+}
+
+.content {
+  width:50%;
+  margin:30px auto;
+  background-color:#fff;
+  color:#000;
+  border:solid 2px #000;
+  border-radius:8px;
+  text-align:left;
+}
+
+.modal-mask:target {
+  opacity:1;
+  pointer-events:auto;
+}
+
 
 
 header {
@@ -140,7 +218,17 @@ header {
   .btn-sign-in {
     background-color:#FFF952;
     cursor:pointer;
+    color:#2E1042;
   }
+
+.block {
+    display:block;
+    width:100%;
+}
+.inline {
+  display: inline;
+  width: 100%;
+}
 
 /*.box-article{
   display:inline-block;
@@ -154,26 +242,62 @@ aside {
   /*padding: 18px;*/
   text-align:left;
 }
+  aside a {
+    padding: 8px;
+  }
 
-footer {
-  /*padding:18px;*/
+footer a {
+  padding:8px 18px;
+  background-color:#FFF952;
+  color:#2E1042;
+  font-weight:bold;
+  text-align:center;
+
   /*background: #000 url("../images/18422-rayas-de-colores.jpg") no-repeat center;
   background-size: cover*/
 }
 
 /* PAGES - SECTIONS */
 
-#principal,
+/*#principal,
 #beneficios {
-  /*padding: 18px;*/
+  padding: 18px;
+  text-align:center;
+}*/
+
+#principal article {
+  /* background-color:var(--bg-black); */
   text-align:center;
 }
 
+#principal form{
+  text-align:center;
+}
+
+  #principal form input {
+    /* background-color: #ccc; */
+    font-family:'Quicksand', sans-serif;
+    font-weight:bold;
+  }
+  #principal form input:focus {
+    border:solid #000;
+  }
+  #principal form input[placeholder] {
+    font-size: 18px;
+    padding: 8px 18px;
+    text-align:left;
+    border:none;
+  }
+  #principal form button {
+    font-size:18px;
+    text-align:center;
+  }
+
 #beneficios {
-  margin: 15px;
-  background: #D76754;
-  color: #fff;
-  font-size: 20px;
+  background:#D96459;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
 }
 
 #beneficios img {
