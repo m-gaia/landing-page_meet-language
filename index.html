@@ -14,6 +14,9 @@
     <!-- Iconos - Fontawesome (fonts.google.com) -->
     <link rel="stylesheet" href="css/all.css">
 
+    <!-- Slider -->    
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
     <!-- style.css - ruta -->
     <link rel="stylesheet" href="css/style.css">
     
@@ -29,23 +32,23 @@
     <div class="container">
         <!-- Menú de navegación -->
         <nav id="navbar">
-            <div class="row clearfix">
+            <div class="row">
                 <!-- Botón -->
                 <div class="col-1">
                     <div class="menu-button">
-                        <span>=</span>
+                        <i class="fa fa-bars"></i>
                 <!-- Menú desplegado oculto -->
                         <ul class="navbar-menu">
                             <li class= "navbar-item"><a href="#sobre-nosotros" class= "navbar-link">Sobre nosotros</a></li>
-                            <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Preguntas frecuentes</a></li>
+                            <li class= "navbar-item"><a href="#preguntas-frecuentes" class= "navbar-link">Faq</a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- Logo - Nombre de app -->
-                <div class="col-2">
+                <div class="col-3">
                     <h1>
                         <a href="">
-                        <img src="images/logo-nombre1.PNG" class="img-fluid" alt="Meet-Languages">
+                        <img src="images/logo-nombre1.PNG" width="220" class="ml-15" alt="Meet-Languages">
                         </a>
                     </h1>
                 </div>
@@ -63,16 +66,16 @@
                 <section id="principal">
                     <div class="row clearfix"> 
                         <article class="mb-15 pb-15">
-                            <div class="col-4">
+                            <div class="col-4 bg-violet2">
                             <!-- Encabezado principal -->
-                                <h2 class="text-violet">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO?</h2>
+                                <h2 class="text-white">¿QUIERES APRENDER ALGÚN IDIOMA CON UN HABLANTE NATIVO?</h2>
                             <!-- Refuerzo -->
-                                <p>Quizás pienses: "¡Pero no tengo con quien conversar!"</p>
-                                <p>Inicia ahora con una experiencia global.</p>
+                                <p class="font-we">Quizás pienses: "¡Pero no tengo con quien conversar!"</p>
+                                <p class="font-we">Inicia ahora con una experiencia global.</p>
                             </div>
                         </article>
                         <!-- Formulario -->
-                        <div class="col-4 bg-violet">
+                        <div class="col-4 bg-violet mb-15 mt-15">
                             <h3 class="text-center text-white">¡ÚNETE AHORA MISMO GRATIS!</h3>
                             <form action="procesar-formulario.php" post="post">
                                 <input type="text" placeholder="Nombre y apellido" required class="block mb-15 pt-15">
@@ -87,63 +90,59 @@
         <!-- BENEFICIOS -->
             <div class="container">
                 <div class="row clearfix">
-                    <div class="col-4">
+                    <div class="col-4 pt-15">
                         <!-- Beneficios NO LLEVARA TITULO!!! -->
                         <section id="beneficios">
-                            <div class="bxslider">
-                                <div>
-                                    <h4>EXPERIENCIA Y CULTURA</h4>
-                                    <img src="images/experiencia-icon.PNG" class= "img-fluid" alt="trabajo y viajes">
-                                </div>
-                                <div>
-                                    <h4>AMIGOS</h4>
-                                    <img src="images/amigos-icon.PNG" class= "img-fluid" alt="hablantes nativos">
-                                </div>
-                                <div>
-                                    <h4>CONFIANZA Y FLUIDEZ</h4>
-                                    <img src="images/confianza-icon.PNG" class= "img-fluid" alt="conversacional">
-                                </div>
+                            <div class="bxslider mt-15 bx-caption span">
+                                <div><img src="images/experiencia-icon.PNG" title="EXPERIENCIA Y CULTURA" class= "img-fluid center-block" alt="trabajo y viajes"></div>
+                                <div><img src="images/amigos-icon.PNG" title="AMIGOS" class= "img-fluid center-block" alt="hablantes nativos"></div>
+                                <div><img src="images/confianza-icon.PNG" title="CONFIANZA Y FLUIDEZ" class= "img-fluid center-block" alt="conversacional"></div>
                         </section>
                     </div> <!-- /.col-section -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </header>
     </main>
-    <hr>
 
     <!-- ASIDE: Redes sociales -->
     <aside>
-        <div class="container bg-grey">
+        <div class="container">
             <div class="row clearfix">
                 <!-- <h3>Redes Sociales</h3> -->
                 <div class="col-4">
-                    <h3>Podes seguirnos en:</h3>
+                    <h3 class="text-white">Podes seguirnos en:</h3>
                 </div>
                 <!-- Iconos -->
                 <div class="col-3">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="icons/icon-facebook_preview_rev_1.png" width="50" alt="logo Facebook"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram-icon_preview_rev_1.png" width="50" alt="logo Instagram"></a>
-                    <a href="https://www.twitter.com/" target="_blank"><img src="icons/icon-twitter_preview_rev_1.png" width="50" alt="logo Twitter"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
                 </div> <!-- /.col-iconos -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </aside>
-    <hr>
 
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <h5 class="text-grey">Copyright 2020 Meet-Language</h5>
-                </div>
-                <div class="col-1">
-                    <a href="mailto:info@meet-languages.com">Contacto</a>
-                </div>
-            </div> <!-- /.row -->
+          <div class="row">
+            <div class="col-2">
+              <a href="#">
+                <img src="images/logo.png" width="50" alt="">           
+              </a>
+            </div>
+            <div class="col-2 mt-15">
+              <a href=":info@meet-language.com" class="btn mb-15"><i class="far fa-envelope-square"></i></a>
+            </div>
+            <div class="col-4">
+              <hr class="separador">  
+              <p class="text-white">© Meet-Language 2020</p>      
+            </div>
+          </div> <!-- /.row -->
         </div> <!-- /.container -->
-    </footer>
-    <hr>
+      </footer>
+
+
     <!-- VENTANAS MODALES -->
 
     <!-- Sobre nosotros -->
@@ -162,7 +161,7 @@
     <div id="preguntas-frecuentes" class="modal-mask">
         <div class="content">
             <a href="#/">Cerrar</a>
-            <h3>PREGUNTAS FRECUENTES</h3>
+            <h3>FAQ</h3>
             <details>
                 <summary>¿Cómo usar Meet-Language?</summary>
                 <p>¡Bienvenido a Meet-Language! Puedes utilizarlo a través de nuestras aplicaciones para iOS, Android y nuestra página web (para dispositivos móviles y computadoras).</p>
@@ -197,5 +196,23 @@
         </div>
     </div>
 
+
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+
+<script>
+    $(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    auto:true,
+    captions: true,
+    slideWidth: 600,
+    adaptiveHeight:true,
+  });
+});
+</script>
 </body>
 </html>
