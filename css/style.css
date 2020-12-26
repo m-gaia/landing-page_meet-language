@@ -196,7 +196,7 @@ width:100%;
 }
 
 .content {
-  width:30%;
+  width:35%;
   margin: 30px auto;
   /*padding:10px;*/
   background-color:#fff;
@@ -207,6 +207,7 @@ width:100%;
 }
 
 .modal-mask:target {
+  position:absolute;
   opacity:1;
   pointer-events:auto;
 }
@@ -276,14 +277,8 @@ footer {
 
 /* PAGES - SECTIONS */
 
-/*#principal,
-#beneficios {
-  padding: 18px;
-  text-align:center;
-}*/
 
 #principal article {
-  /* background-color:var(--bg-black); */
   text-align:center;
 }
 
