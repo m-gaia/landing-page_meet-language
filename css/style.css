@@ -1,15 +1,8 @@
 /* Variables CSS */
 :root {
-  --bg-nav-footer:#9A8FA6;
   --bg-principal: #2E1042;
   --bg-beneficios: #ffffff;
-
-  /* Paleta de colores en base al logo
-  ------------------------------------ */
-  /*--primary-color: #F28322;
-  --second-color: #F2E205;
-  --third-color: #F20505;
-  --bg-gradient-01:0deg, #3ea7ff 0%, #42d1ff 100%;*/
+  --bg-nav-footer:#9A8FA6;
 }
 
 * {
@@ -32,9 +25,6 @@ ul {
   list-style:none;
 }
 
-/* nav {
-  border:solid 1px #000;
-} */
 
 /* HELPERS - CLASSES */
 
@@ -59,8 +49,14 @@ ul {
 .bg-orange {
   color:#D96459;
 }
+.text-orange{
+  color:#D96459;
+}
 .text-violet {
   color:#2E1042 5px
+}
+.text-violet2 {
+  color:#9A8FA6;
 }
 .text-grey {
   color:#A6A6A6;
@@ -98,11 +94,18 @@ ul {
   max-width:100%;
   height:auto;
 }
-.separador {
+.line {
   width:100%;
   height:5px;
   margin:15px 0;
   background-color:#fff;
+}
+.fa-2x {
+  font-size: 1.5em;
+  padding: 8px;
+}
+.scroll {
+  overflow-y: scroll;
 }
 
 /* LAYOUT - GRID SYSTEM */
@@ -149,18 +152,18 @@ width:100%;
 
 /* COMPONENTS (elementos estructurales, btn */
 
+/*MENU DE NAVEGACIÓN*/
 .menu-button i {
   cursor:pointer;
   font-size:24px;
 }
-
   ul.navbar-menu {
     margin:0;
     padding: 5px;
     position:absolute;
     left:-514px;
     background-color: rgba(242, 245, 96, 0.959);
-    z-index:99;  
+    /*z-index:99;*/ 
     transition:all 400ms ease-in-out;
   }
     .navbar-item {
@@ -180,6 +183,7 @@ width:100%;
   left:0;
 }
 
+/*VENTANAS MODALES*/
 .modal-mask {
   position:fixed;
   top:0;
@@ -192,13 +196,14 @@ width:100%;
 }
 
 .content {
-  width:50%;
-  margin:30px auto;
+  width:30%;
+  margin: 30px auto;
+  /*padding:10px;*/
   background-color:#fff;
   color:#000;
   border:solid 2px #000;
   border-radius:8px;
-  text-align:left;
+  text-align:justify;
 }
 
 .modal-mask:target {
@@ -206,6 +211,7 @@ width:100%;
   pointer-events:auto;
 }
 
+/*BOTONES*/
 .btn {
   display:inline-block;
   padding:8px 18px;
@@ -221,11 +227,25 @@ width:100%;
     cursor:pointer;
     color:#2E1042;
   }
+  .btn-documents {
+    background-color:#9A8FA6;
+    cursor:pointer;
+    color:#fff;
+  }
+  .btn-contact {
+    margin-left:200px;
+    background-color:#9A8FA6;
+    cursor:pointer;
+    border: solid 2px #fff;
+    color:#fff;
+    font-size:medium
+  }
 
 .block {
     display:block;
     width:100%;
 }
+
 .inline {
   display: inline;
   width: 100%;
@@ -237,43 +257,21 @@ width:100%;
   display: block;
   font-size: .85em;
   padding: 10px;
-  /* text-align: center; */
   margin-bottom: 15px;
 }
-/*.box-article{
-  display:inline-block;
-  width: 30%;
-  padding: 15px;
-  text-align: center;
-  border: none
-}*/
 
 aside {
-  height:120px;
-  text-align:left;
   background-color: #2E1042;
   background-size:cover;
 }
   aside a {
-    padding: 10px;
     font-size:30px;
     color:#fff
   }
 
 footer {
-  height:120px;
-  background-color: #fff;
+  background-color: #9A8FA6;
   background-size:cover;
-}
-
-footer a {
-  padding:8px;
-  color:#2E1042;
-  font-weight:bold;
-  text-align:center;
-
-  /*background: #000 url("../images/18422-rayas-de-colores.jpg") no-repeat center;
-  background-size: cover*/
 }
 
 /* PAGES - SECTIONS */
@@ -289,7 +287,7 @@ footer a {
   text-align:center;
 }
 
-#principal form{
+#principal form {
   text-align:center;
 }
 
@@ -321,3 +319,21 @@ footer a {
 #beneficios img {
   border-radius:50%;
 }
+
+/* Preguntas frecuentes */
+
+summary {
+  border: solid #2E1042;
+  padding: 8px;
+  margin-bottom:8px;
+  text-align:left;
+}
+
+details ul {
+    margin:16px 8px;
+    padding:0px;
+  }
+
+
+
+
