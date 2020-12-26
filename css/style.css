@@ -1,7 +1,6 @@
 /* Variables CSS */
 :root {
   --bg-principal: #2E1042;
-  --bg-beneficios: #ffffff;
   --bg-nav-footer:#9A8FA6;
 }
 
@@ -104,9 +103,6 @@ ul {
   font-size: 1.5em;
   padding: 8px;
 }
-.scroll {
-  overflow-y: scroll;
-}
 
 /* LAYOUT - GRID SYSTEM */
 
@@ -148,7 +144,6 @@ width:75%;
 .col-4 {
 width:100%;  
 }
-
 
 /* COMPONENTS (elementos estructurales, btn */
 
@@ -198,7 +193,6 @@ width:100%;
 .content {
   width:35%;
   margin: 30px auto;
-  /*padding:10px;*/
   background-color:#fff;
   color:#000;
   border:solid 2px #000;
