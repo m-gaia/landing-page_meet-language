@@ -226,6 +226,8 @@ width:100%;
     background-color:#9A8FA6;
     cursor:pointer;
     color:#fff;
+    font-size:medium;
+    border-radius:8px;
   }
   .btn-contact {
     margin-left:200px;
@@ -233,7 +235,8 @@ width:100%;
     cursor:pointer;
     border: solid 2px #fff;
     color:#fff;
-    font-size:medium
+    font-size:medium;
+    border-radius:8px;
   }
 
 .block {
@@ -260,6 +263,7 @@ aside {
   background-size:cover;
 }
   aside a {
+    padding:10px;
     font-size:30px;
     color:#fff
   }
