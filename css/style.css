@@ -192,7 +192,7 @@ width:100%;
 }
 
 .content {
-  width:50%;
+  width:90%;
   margin: 30px auto;
   background-color:#fff;
   color:#000;
@@ -230,7 +230,8 @@ width:100%;
     border-radius:8px;
   }
   .btn-contact {
-    margin-left:200px;
+    /*margin-left:200px;*/
+    float:right;
     background-color:#2E1042;
     cursor:pointer;
     border: solid 2px #fff;
